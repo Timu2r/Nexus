@@ -202,7 +202,7 @@ const startRequestProcess = async (ctx, userId) => {
 	requestStates[userId] = { step: 1 }
 	await ctx.replyWithHTML(
 		MESSAGES.START_REQUEST_PROMPT,
-		Markup.keyboard([['❌ Отменить заявку'], ['🏠 Главное меню']]).resize()
+		Markup.keyboard([ ['🏠 Главное меню']]).resize()
 	)
 	return true
 }
